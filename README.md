@@ -4,7 +4,7 @@ the dataset is collected from the Cpython open source code to train the model to
 the length of the dataset is roughly 180k of commits strings
 
 <p align="center">
-  <img src="gitmore_logo.png" width="600" height="400" alt="tictactoe_Robot">
+  <img src="gitmore_logo.png" width="800" height="400" alt="tictactoe_Robot">
 </p>
 
 ### The model size is `265k parameters` with `13 layers` |  input size of `vocab_size by n_embd`  |  output size of  `n_hidden by vocab_size`
