@@ -2,7 +2,6 @@
 ## Gitmore v1 is the NN model built on ANN - MLP, with the dataset of git commits messages.
 the dataset is collected from the Cpython open source code to train the model to generate the Git commits learned from data.
 the length of the dataset is roughly 180k of commits strings
-
 <p align="center">
   <img src="gitmore_logo.png" width="800" height="400" alt="tictactoe_Robot">
 </p>
