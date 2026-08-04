@@ -13,7 +13,7 @@ def sample(nums): # this function is used to ask the model to generate the commi
         out.append(itos[ix])
       context = context[1:] + [ix]
     print(''.join(out))
-    print("\n")
+    print("") # print empty string to have spacing when the model sample nums > 1
     
 # to search whether the model is getting some words type from the data or it's just making them up
 def search(x: str):
