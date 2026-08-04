@@ -1,7 +1,7 @@
 def sample(nums): # this function is used to ask the model to generate the commits like, it works well
   for i in range(nums):
     out = []
-    context = [0] * block_size
+    context = [0] * block_size # this is the first token to start any commit
     while True:
       contx  = torch.tensor([context])
       logits = model(contx)
