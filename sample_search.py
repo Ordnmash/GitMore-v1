@@ -7,7 +7,7 @@ def sample(nums): # this function is used to ask the model to generate the commi
       logits = model(contx)
       probs  = F.softmax(logits, dim=1)
       ix     = torch.multinomial(probs, num_samples=1, replacement=True).item()
-      if ix == 0:
+      if ix == 0: # because 0 is the special ENDtoken we want to break assuming the model predicts the sentence comes to an end.
         break
       else:
         out.append(itos[ix])
