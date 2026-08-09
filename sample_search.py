@@ -18,12 +18,11 @@ def sample(nums): # this function is used to ask the model to generate the commi
 # to search whether the model is getting some words type from the data or it's just making them up
 def search(x: str):
   count= 0
-  cont = []
   
   for c in commits:
     if x.lower() in c.lower():
-      cont.append(c)
+      #cont.append(c)
       count+=1
   
   print(f'{count} matches found...')
-  return cont if cont else None
+  return None
