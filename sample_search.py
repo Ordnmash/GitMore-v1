@@ -2,16 +2,20 @@ def sample(nums): # this function is used to ask the model to generate the commi
   for i in range(nums):
     out = []
     context = [0] * block_size # this is the first token to start any commit
+    
     while True:
       contx  = torch.tensor([context])
       logits = model(contx)
       probs  = F.softmax(logits, dim=1)
       ix     = torch.multinomial(probs, num_samples=1, replacement=True).item()
+    
       if ix == 0: # because 0 is the special ENDtoken we want to break assuming the model predicts the sentence comes to an end.
         break
+      
       else:
         out.append(itos[ix])
-      context = context[1:] + [ix]
+        context = context[1:] + [ix]
+    
     print(''.join(out))
     print("") # print empty string to have spacing when the model sample nums > 1
     
