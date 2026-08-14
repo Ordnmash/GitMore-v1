@@ -11,5 +11,5 @@ the length of the dataset is roughly 180k of commits strings
 this was a very successful training with a very good training and validation loss out of the model!
 before training, the model had an `initialization loss of 4.642845` which is few inches about the `projected initial loss of 4.5539`
 <hr>
-after 500k epochs I got a very good surprising `validation loss of around 1.516756` with `training loss of 1.301701` 
+after 500k epochs I got a very good surprising <b>validation loss of around <i>1.516756</i></b> with <b>training loss of <i>1.301701</i></b> 
 this yield to very good commits messages when sampling.
