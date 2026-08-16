@@ -1,9 +1,11 @@
 def sample(nums): # this function is used to ask the model to generate the commits like, it works well
+  
   for i in range(nums):
     out = []
     context = [0] * block_size
     
     while True:
+      
       contx  = torch.tensor([context])
       logits = model(contx)
       probs  = F.softmax(logits, dim=1)
