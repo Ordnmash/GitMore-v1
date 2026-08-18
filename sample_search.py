@@ -1,5 +1,4 @@
 def sample(nums): # this function is used to ask the model to generate the commits like, it works well
-  
   for i in range(nums):
     out = []
     context = [0] * block_size
