@@ -5,7 +5,7 @@ the length of the dataset is roughly 180k of commits strings
 <p align="center">
   <img src="gitmore_logo.png" width="800" height="400" alt="GitMore_logo">
 </p>
-### The model size is `265k parameters` with `13 layers` |  input size of `vocab_size by n_embd`  |  output size of  `n_hidden by vocab_size`
+### The model size is `265k parameters` with `13 layers` |  input size of `vocab_size by n_embd`
 <hr>
 this was a very successful training with a very good training and validation loss out of the model!
 before training, the model had an `initialization loss of 4.642845` which is few inches about the `projected initial loss of 4.5539`
