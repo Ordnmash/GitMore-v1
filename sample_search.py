@@ -3,7 +3,6 @@ def sample(nums): # this function is used to ask the model to generate the commi
     out = []
     context = [0] * block_size
     while True:
-      
       contx  = torch.tensor([context])
       logits = model(contx)
       probs  = F.softmax(logits, dim=1)
