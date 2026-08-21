@@ -2,7 +2,6 @@ def sample(nums): # this function is used to ask the model to generate the commi
   for i in range(nums):
     out = []
     context = [0] * block_size
-    
     while True:
       
       contx  = torch.tensor([context])
