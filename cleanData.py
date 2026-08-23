@@ -2,7 +2,7 @@
 def remove_fromData(symbol):
   for i,c in commits:
     if symbol in c:
-      commits.pop(i) # note that data would change indexing positions as you pop.
-      i-=1 # align index and c with the loop
+      commits.pop(i)
+      i-=1
 
 remove_fromData('~')
