@@ -3,7 +3,7 @@ def remove_fromData(symbol: str):
   for i,c in commits:
     if symbol in c:
       commits.pop(i)
-      i-=
+      i-=1
   return 
 
 remove_fromData('~')
