@@ -1,5 +1,5 @@
 def remove_fromData(symbol: str):
-  for i,c in commits: # are commits tuples?
+  for i,c in enumerate(commits):
     if symbol in c:
       commits.pop(i)
       i-=1
