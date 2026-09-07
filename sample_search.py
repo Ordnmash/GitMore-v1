@@ -7,10 +7,8 @@ def sample(nums): # this function is used to ask the model to generate the commi
       logits = model(contx)
       probs  = F.softmax(logits, dim=-1)
       ix     = torch.multinomial(probs, num_samples=1, replacement=True).item()
-    
       if ix == 0:
         break
-      
       else:
         out.append(itos[ix])
         context = context[1:] + [ix]
